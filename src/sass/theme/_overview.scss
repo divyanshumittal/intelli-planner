@@ -1,0 +1,16 @@
+.overview {
+  .panel {
+    cursor: pointer;
+    transition: all ease 400ms;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  .btn {
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}

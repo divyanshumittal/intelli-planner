@@ -1,11 +1,11 @@
 /**
- * @author v.lugovksy
+ *
  * created on 15.12.2015
  */
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.theme')
+  angular.module('ScalaApp.theme')
     .run(themeRun);
 
   /** @ngInject */
@@ -33,7 +33,7 @@
       if (!$rootScope.$pageFinishedLoading) {
         $rootScope.$pageFinishedLoading = true;
       }
-    }, 7000);
+    }, 2000);
 
     $rootScope.$baSidebarService = baSidebarService;
   }

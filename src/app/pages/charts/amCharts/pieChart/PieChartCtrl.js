@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.charts.amCharts')
+  angular.module('ScalaApp.pages.charts.amCharts')
       .controller('PieChartCtrl', PieChartCtrl);
 
   /** @ngInject */
@@ -24,13 +24,13 @@
         marginRight: 100,
         autoMargins: false,
       },
-      innerRadius: '40%',
+      innerRadius: '80%',
       defs: {
         filter: [
           {
             id: 'shadow',
-            width: '200%',
-            height: '200%',
+            width: '100%',
+            height: '100%',
             feOffset: {
               result: 'offOut',
               in: 'SourceAlpha',
@@ -52,36 +52,12 @@
       },
       dataProvider: [
         {
-          country: 'Lithuania',
+          country: 'Memory Used',
           litres: 501.9
         },
         {
-          country: 'Czech Republic',
+          country: 'Memory Available',
           litres: 301.9
-        },
-        {
-          country: 'Ireland',
-          litres: 201.1
-        },
-        {
-          country: 'Germany',
-          litres: 165.8
-        },
-        {
-          country: 'Australia',
-          litres: 139.9
-        },
-        {
-          country: 'Austria',
-          litres: 128.3
-        },
-        {
-          country: 'UK',
-          litres: 99
-        },
-        {
-          country: 'Belgium',
-          litres: 60
         }
       ],
       valueField: 'litres',
@@ -104,7 +80,6 @@
         rules: [
           // at 900px wide, we hide legend
           {
-            maxWidth: 900,
             overrides: {
               legend: {
                 enabled: false
@@ -114,7 +89,7 @@
 
           // at 200 px we hide value axis labels altogether
           {
-            maxWidth: 200,
+            maxWidth: 0,
             overrides: {
               valueAxes: {
                 labelsEnabled: false

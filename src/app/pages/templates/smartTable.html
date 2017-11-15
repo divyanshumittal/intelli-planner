@@ -1,0 +1,58 @@
+<div class="horizontal-scroll">
+<!--  <div class="form-group select-page-size-wrap ">
+    <label>Rows on page
+      <select class="form-control selectpicker show-tick" title="Rows on page" selectpicker
+              ng-model="10" ng-options="i for i in [5,10,15,20,25]">
+      </select>
+    </label>
+  </div>-->
+  <table class="table" st-table="smartTableData">
+    <thead>
+    <tr class="sortable ">
+      <th class="table-id" st-sort="id" st-sort-default="true">#</th>
+      <th st-sort="firstName">UUID</th>
+      <th st-sort="lastName">Model Name</th>
+      <th st-sort="username">Time</th>
+      <th st-sort="email">Success</th>
+      <th st-sort="age" class="text-center">Input & Output</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th><input st-search="firstName" placeholder="Search UUID" class="input-sm form-control search-input"
+                 type="search"/></th>
+      <th><input st-search="lastName" placeholder="Search Model Name" class="input-sm form-control search-input"
+                 type="search"/></th>
+      <th><input st-search="username" placeholder="Search Time" class="input-sm form-control search-input"
+                 type="search"/></th>
+      <th><input st-search="email" placeholder="Search Success(true/false)" class="input-sm form-control search-input" type="search"/>
+      </th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="table-id">1</td>
+      <td>1712fad9-edb9-4297-a5ec-0677a8b77fd5</td>
+      <td>Naive Bayes -1 </td>
+      <td>{{1288323623006 | date:'yyyy-MM-dd HH:mm:ss Z'}}</td>
+      <td>True</td>
+      <td class="text-center"><button type="button" class="btn btn-default btn-xs">View</button></td>
+    </tr>
+    <tr>
+      <td class="table-id">2</td>
+      <td>98427f8a-4238-4f39-b663-04c8ace31443</td>
+      <td>Naive Bayes - 2</td>
+      <td>{{1228311623006 | date:'yyyy-MM-dd HH:mm:ss Z'}}</td>
+      <td>False</td>
+      <td class="text-center"><button type="button" class="btn btn-default btn-xs">View</button></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="6" class="text-center">
+        <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>

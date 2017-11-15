@@ -1,11 +1,11 @@
 /**
- * @author v.lugovksy
- * created on 16.12.2015
+ * 
+ *
  */
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.dashboard')
+  angular.module('ScalaApp.pages.dashboard')
       .controller('DashboardPieChartCtrl', DashboardPieChartCtrl);
 
   /** @ngInject */
@@ -13,24 +13,24 @@
     var pieColor = baUtil.hexToRGB(baConfig.colors.defaultText, 0.2);
     $scope.charts = [{
       color: pieColor,
-      description: 'New Visits',
-      stats: '57,820',
-      icon: 'person',
+      description: 'Total Predictions',
+      stats: '57,820,234',
+      icon: 'person'
     }, {
       color: pieColor,
-      description: 'Purchases',
-      stats: '$ 89,745',
-      icon: 'money',
+      description: 'Success',
+      stats: '54,389,745',
+      icon: 'money'
     }, {
       color: pieColor,
-      description: 'Active Users',
-      stats: '178,391',
-      icon: 'face',
+      description: 'Error',
+      stats: '3,430,489',
+      icon: 'face'
     }, {
       color: pieColor,
-      description: 'Returned',
-      stats: '32,592',
-      icon: 'refresh',
+      description: 'Error rate',
+      stats: '5.93%',
+      icon: 'refresh'
     }
     ];
 

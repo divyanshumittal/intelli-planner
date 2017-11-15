@@ -1,11 +1,11 @@
 /**
- * @author v.lugovsky
- * created on 16.12.2015
+ *
+ *
  */
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.dashboard', [])
+  angular.module('ScalaApp.pages.dashboard', [])
       .config(routeConfig);
 
   /** @ngInject */
@@ -14,11 +14,7 @@
         .state('dashboard', {
           url: '/dashboard',
           templateUrl: 'app/pages/dashboard/dashboard.html',
-          title: 'Dashboard',
-          sidebarMeta: {
-            icon: 'ion-android-home',
-            order: 0,
-          },
+          title: 'Scala Rally - Prediction Dashboard'
         });
   }
 

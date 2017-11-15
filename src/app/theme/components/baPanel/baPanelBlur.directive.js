@@ -1,11 +1,11 @@
 /**
- * @author v.lugovsky
+ *
  * created on 15.01.2016
  */
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.theme')
+  angular.module('ScalaApp.theme')
       .directive('baPanelBlur', baPanelBlur);
 
   /** @ngInject */

@@ -5,7 +5,7 @@
 (function () {
     'use strict';
 
-    angular.module('BlurAdmin.theme.components')
+    angular.module('ScalaApp.theme.components')
         .directive('progressBarRound', progressBarRound);
 
     /** @ngInject */
