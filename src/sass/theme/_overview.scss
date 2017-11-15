@@ -1,4 +1,20 @@
 .overview {
+  height: 50vh;
+
+  .panel-1 {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 5px solid grey;
+  }
+
+  .panel-2 {
+    height: 100%;
+    border-top: 5px solid grey;
+    border-right: 5px solid grey;
+    border-bottom: 5px solid grey;
+  }
+
   .panel {
     cursor: pointer;
     transition: all ease 400ms;
@@ -11,6 +27,26 @@
   .btn {
     &:hover {
       transform: scale(1.02);
+    }
+  }
+}
+
+.gantt-chart {
+  height: 50vh;
+
+  .panel-3 {
+    height: 100%;
+    border-right: 5px solid grey;
+    border-bottom: 5px solid grey;
+    border-left: 5px solid grey;
+  }
+
+  #chartdiv {
+    width: 90%;
+    height: 100%;
+
+    .amcharts-chart-div {
+      color: white;
     }
   }
 }

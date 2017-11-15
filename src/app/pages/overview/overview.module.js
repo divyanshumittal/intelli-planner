@@ -14,7 +14,7 @@
         .state('overview', {
           url: '/overview',
           templateUrl: 'app/pages/overview/overview.html',
-          title: 'Scala Rally - Overview'
+          title: 'Mining management'
         });
   }
 

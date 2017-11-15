@@ -14,7 +14,7 @@
         .state('dashboard', {
           url: '/dashboard',
           templateUrl: 'app/pages/dashboard/dashboard.html',
-          title: 'Scala Rally - Prediction Dashboard'
+          title: 'Mining management - Dashboard'
         });
   }
 
